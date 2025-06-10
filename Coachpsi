@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios profesionales de educación online, Moodle, IA educativa y soluciones a medida. José Luis Paillapi.">
+    <title>Servicios LMS - José Luis Paillapi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .card-gradient { background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #5D5CDE 100%); }
+        .dark .card-gradient { background: linear-gradient(135deg, #4c63d2 0%, #5c3b8b 50%, #4C4BCA 100%); }
+        .floating-animation { animation: float 3s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-8px); } }
+        .service-tag { transition: all 0.3s ease; font-size: 0.75rem; }
+        .service-tag:focus, .service-tag:hover { outline: 2px solid #5D5CDE; outline-offset: 2px; transform: scale(1.05) translateY(-1px); box-shadow: 0 4px 15px rgba(93,92,222,0.3);}
+        .digital-card { background: white; border-radius: 24px; box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15); overflow: hidden; max-width: 440px; margin: 0 auto;}
+        .dark .digital-card { background: #1F2937; box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);}
+        .decorative-blob { position: absolute; border-radius: 50%; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);}
+        .contact-btn { background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); transition: all 0.3s ease;}
+        .contact-btn:focus, .contact-btn:hover { background: rgba(255,255,255,0.3); transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.2);}
+        .credential-badge { background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);}
+        .service-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; transition: all 0.3s ease;}
+        .service-card:focus, .service-card:hover { outline: 2px solid #5D5CDE; outline-offset: 2px; transform: translateY(-3px) scale(1.02); box-shadow: 0 8px 25px rgba(0,0,0,0.1);}
+        .dark .service-card { background: #374151; border: 1px solid #4b5563; }
+        .dark .service-card:focus, .dark .service-card:hover { box-shadow: 0 8px 25px rgba(0,0,0,0.3);}
+        .cta-gradient { background: linear-gradient(135deg, #ff6b6b, #ee5a52);}
+        a:focus, button:focus { outline: 2px solid #5D5CDE; outline-offset: 2px;}
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-800 min-h-screen p-4 flex items-center justify-center transition-colors duration-300">
+    <!-- Theme Detection Script -->
+    <script>
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+    </script>
+
+    <main class="digital-card w-full max-w-lg container">
+        <header class="card-gradient text-white p-8 relative overflow-hidden">
+            <!-- Elementos decorativos -->
+            <div class="decorative-blob w-24 h-24 -top-12 -right-12"></div>
+            <div class="decorative-blob w-16 h-16 -bottom-8 -left-8"></div>
+            <div class="relative z-10">
+                <div class="text-center mb-6">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-white bg-opacity-20 rounded-full flex items-center justify-center floating-animation" aria-hidden="true">
+                        <i class="fas fa-graduation-cap text-3xl text-white"></i>
+                    </div>
+                    <h1 class="text-2xl font-bold mb-2">SERVICIOS PROFESIONALES</h1>
+                    <p class="text-lg opacity-90 font-medium">Educación Online &amp; LMS</p>
+                    <p class="text-sm opacity-80 mt-1">José Luis Paillapi</p>
+                </div>
+                <section aria-label="Certificaciones y experiencia destacada">
+                    <div class="grid grid-cols-2 gap-3 mb-6">
+                        <div class="credential-badge text-center py-3 px-3 rounded-lg">
+                            <i class="fas fa-code text-yellow-300 text-sm mb-1"></i>
+                            <p class="text-xs font-semibold">Moodle 2.5 → 5.0</p>
+                            <p class="text-xs opacity-80">Experiencia</p>
+                        </div>
+                        <div class="credential-badge text-center py-3 px-3 rounded-lg">
+                            <i class="fas fa-certificate text-yellow-300 text-sm mb-1"></i>
+                            <p class="text-xs font-semibold">SENCE</p>
+                            <p class="text-xs opacity-80">Integración</p>
+                        </div>
+                    </div>
+                    <div class="text-center mb-4">
+                        <div class="credential-badge inline-flex items-center gap-2 py-2 px-4 rounded-full">
+                            <i class="fas fa-robot text-yellow-300"></i>
+                            <span class="text-sm font-semibold">Especialista en IA Educativa</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </header>
+        <section class="p-6" aria-label="Servicios principales y tecnologías">
+            <h2 class="text-lg font-bold text-gray-800 dark:text-white mb-4 text-center">Servicios Especializados</h2>
+            <div class="grid grid-cols-2 gap-3 mb-6">
+                <div class="service-card p-3 text-center" tabindex="0">
+                    <div class="w-10 h-10 mx-auto mb-2 bg-blue-500 rounded-full flex items-center justify-center" aria-hidden="true">
+                        <i class="fas fa-server text-white text-sm"></i>
+                    </div>
+                    <h3 class="text-xs font-bold text-gray-800 dark:text-white">Instalación LMS</h3>
+                    <p class="text-xs text-gray-600 dark:text-gray-400">Moodle completo</p>
+                </div>
+                <div class="service-card p-3 text-center" tabindex="0">
+                    <div class="w-10 h-10 mx-auto mb-2 bg-purple-500 rounded-full flex items-center justify-center" aria-hidden="true">
+                        <i class="fas fa-cogs text-white text-sm"></i>
+                    </div>
+                    <h3 class="text-xs font-bold text-gray-800 dark:text-white">Personalización</h3>
+                    <p class="text-xs text-gray-600 dark:text-gray-400">A medida</p>
+                </div>
+                <div class="service-card p-3 text-center" tabindex="0">
+                    <div class="w-10 h-10 mx-auto mb-2 bg-green-500 rounded-full flex items-center justify-center" aria-hidden="true">
+                        <i class="fas fa-drafting-compass text-white text-sm"></i>
+                    </div>
+                    <h3 class="text-xs font-bold text-gray-800 dark:text-white">Diseño Instruccional</h3>
+                    <p class="text-xs text-gray-600 dark:text-gray-400">Pedagógico</p>
+                </div>
+                <div class="service-card p-3 text-center" tabindex="0">
+                    <div class="w-10 h-10 mx-auto mb-2 bg-red-500 rounded-full flex items-center justify-center" aria-hidden="true">
+                        <i class="fas fa-robot text-white text-sm"></i>
+                    </div>
+                    <h3 class="text-xs font-bold text-gray-800 dark:text-white">IA &amp; Bots</h3>
+                    <p class="text-xs text-gray-600 dark:text-gray-400">Educativos</p>
+                </div>
+                <div class="service-card p-3 text-center" tabindex="0">
+                    <div class="w-10 h-10 mx-auto mb-2 bg-yellow-500 rounded-full flex items-center justify-center" aria-hidden="true">
+                        <i class="fas fa-certificate text-white text-sm"></i>
+                    </div>
+                    <h3 class="text-xs font-bold text-gray-800 dark:text-white">Bloque SENCE</h3>
+                    <p class="text-xs text-gray-600 dark:text-gray-400">OTEC</p>
+                </div>
+                <div class="service-card p-3 text-center" tabindex="0">
+                    <div class="w-10 h-10 mx-auto mb-2 bg-indigo-500 rounded-full flex items-center justify-center" aria-hidden="true">
+                        <i class="fas fa-file-code text-white text-sm"></i>
+                    </div>
+                    <h3 class="text-xs font-bold text-gray-800 dark:text-white">Contenidos SCORM</h3>
+                    <p class="text-xs text-gray-600 dark:text-gray-400">Interactivos</p>
+                </div>
+            </div>
+            <section aria-label="Tecnologías">
+                <h3 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3 flex items-center gap-2">
+                    <i class="fas fa-code text-primary text-sm"></i>
+                    Tecnologías
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="service-tag bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded-md" tabindex="0">PHP</span>
+                    <span class="service-tag bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 py-1 rounded-md" tabindex="0">Moodle 5.0</span>
+                    <span class="service-tag bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 py-1 rounded-md" tabindex="0">MySQL</span>
+                    <span class="service-tag bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 px-2 py-1 rounded-md" tabindex="0">JavaScript</span>
+                    <span class="service-tag bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-2 py-1 rounded-md" tabindex="0">AI/ML</span>
+                </div>
+            </section>
+            <section aria-label="Servicios adicionales" class="mt-6">
+                <h3 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3 flex items-center gap-2">
+                    <i class="fas fa-plus-circle text-primary text-sm"></i>
+                    Servicios Adicionales
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="service-tag bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200 px-2 py-1 rounded-md" tabindex="0">Relatorías</span>
+                    <span class="service-tag bg-cyan-100 dark:bg-cyan-900 text-cyan-800 dark:text-cyan-200 px-2 py-1 rounded-md" tabindex="0">Seminarios IA</span>
+                    <span class="service-tag bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 px-2 py-1 rounded-md" tabindex="0">Capacitaciones</span>
+                    <span class="service-tag bg-amber-100 dark:bg-amber-900 text-amber-800 dark:text-amber-200 px-2 py-1 rounded-md" tabindex="0">Consultoría</span>
+                </div>
+            </section>
+            <section aria-label="Estadísticas" class="mt-6">
+                <div class="grid grid-cols-3 gap-4 mb-6 text-center">
+                    <div class="bg-gradient-to-r from-primary to-accent p-3 rounded-lg text-white">
+                        <div class="text-lg font-bold">15+</div>
+                        <div class="text-xs opacity-90">Años</div>
+                    </div>
+                    <div class="bg-gradient-to-r from-purple-500 to-pink-500 p-3 rounded-lg text-white">
+                        <div class="text-lg font-bold">100+</div>
+                        <div class="text-xs opacity-90">Proyectos</div>
+                    </div>
+                    <div class="bg-gradient-to-r from-green-500 to-teal-500 p-3 rounded-lg text-white">
+                        <div class="text-lg font-bold">50+</div>
+                        <div class="text-xs opacity-90">Clientes</div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <footer class="cta-gradient text-white p-6 text-center" aria-label="Contacto y llamado a la acción">
+            <h3 class="text-lg font-bold mb-3">¿Necesitas un Psicologo con orientación a resultados?</h3>
+            <p class="text-sm opacity-90 mb-4">Gestiona el cambio con estrategia y herramientas de vanguardia</p>
+            <div class="grid grid-cols-2 gap-3">
+                <a href="mailto:jluispm2015@gmail.com?subject=Consulta%20Servicios%20LMS&amp;body=Hola%20José%20Luis,%0A%0AMe%20interesa%20conocer%20más%20sobre%20tus%20servicios%20de%20Moodle%20y%20educación%20online."
+                   class="contact-btn text-white py-3 px-4 rounded-lg text-sm font-medium flex items-center justify-center gap-2 no-underline"
+                   aria-label="Solicitar información por correo">
+                    <i class="fas fa-envelope"></i>
+                    <span>Solicitar</span>
+                </a>
+                <a href="tel:+56981718891"
+                   class="contact-btn text-white py-3 px-4 rounded-lg text-sm font-medium flex items-center justify-center gap-2 no-underline"
+                   aria-label="Llamar por teléfono">
+                    <i class="fas fa-phone"></i>
+                    <span>Llamar</span>
+                </a>
+            </div>
+            <div class="mt-4 flex items-center justify-center gap-2">
+                <i class="fas fa-check-circle text-green-300"></i>
+                <span class="text-sm font-semibold">Garantía de satisfacción</span>
+            </div>
+        </footer>
+    </main>
+    <!-- Botón WhatsApp flotante -->
+    <a href="https://wa.me/56981718891?text=Hola%20José%20Luis,%20me%20interesa%20conocer%20más%20sobre%20tus%20servicios%20de%20Moodle%20y%20educación%20online.%20¿Podrías%20darme%20más%20información?"
+       class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300"
+       target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+    <!-- Botón compartir flotante -->
+    <button onclick="shareServices()" class="fixed bottom-6 left-6 w-14 h-14 bg-primary text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center"
+        aria-label="Compartir servicios">
+        <i class="fas fa-share-alt text-xl"></i>
+    </button>
+    <script>
+        // Función para compartir los servicios
+        function shareServices() {
+            const servicesInfo = `🎓 Psicólogo / MBA / Coach Estratégico
+Roberto Pizarro Díaz
+
+🚀 ESPECIALISTA EN:
+• Psicologia Individual y Organizacional
+• Coaching Estrategico
+• Diagnostico de clima, riesgos psicosociales y evaluaciones psicolaborales
+• Gestión y Desarrollo de proyectos
+• Inteligencia Artificial aplicada al Desarrollo humano
+• Metodologias Agiles, SCRUM, Design Thinking, Kanban
+
+💼 EXPERIENCIA:
+✅ 15+ años de experiencia profesional
+✅ Experiencia en procesos integrales de cambio individual, organizacional, comunicacional y estrategia.
+✅ 50+ instituciones atendidas
+
+📱 CONTACTO:
+📧 robertopizarrodiaz@gmail.com
+📞 +56 9 3687 6355
+
+🎯 Conectando Personas, Propósitos y Procesos con sentido y dirección`;
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Psicólogo / MBA / Coach Estratégico - Roberto Pizarro Díaz',
+                    text: servicesInfo,
+                    url: window.location.href
+                });
+            } else {
+                navigator.clipboard.writeText(servicesInfo).then(() => {
+                    // Crear notificación visual
+                    const notification = document.createElement('div');
+                    notification.innerHTML = '✅ ¡Información copiada!';
+                    notification.className = 'fixed top-6 right-6 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg z-50 text-sm font-medium';
+                    document.body.appendChild(notification);
+                    setTimeout(() => { notification.remove(); }, 3000);
+                }).catch(() => {
+                    alert('📋 Información de servicios copiada');
+                });
+            }
+        }
+    </script>
+</body>
+</html>
